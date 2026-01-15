@@ -1,0 +1,27 @@
+body {
+    font-family: monospace; /* Use a monospaced font for a classic look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    color: white;
+}
+
+.typed-text {
+    border-right: 0.1em solid orange; /* The blinking cursor */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides text that goes beyond the width */
+}
+
+/* Optional: Add a subtle blinking animation to the cursor */
+@keyframes blink {
+    from,
+    to {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: orange;
+    }
+}
